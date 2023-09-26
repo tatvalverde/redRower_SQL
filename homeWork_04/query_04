@@ -1,0 +1,42 @@
+--        HW_4 for lecture 6
+-- All tasks must be performed via JOIN
+
+Show all customer order details (number 13) and sort the cost in ascending order.
+
+Count the number of tracks in each album. As a result, display the album ID, album name and number of tracks.
+
+Calculate the total sales in the United States in the first quarter of 2012. Assign any alias to the column.
+
+Complete the queries one by one and answer the questions:
+Will these queries return the same result? Answers: Yes or NO.
+If yes. Explain why.
+If not. Explain why.
+Which query will return more rows?
+
+select * from chinook.customer left JOIN chinook.employee
+ON chinook.customer.SupportRepId = chinook.employee.employeeId;
+
+select * from chinook.customer right JOIN chinook.employee
+ON chinook.customer.SupportRepId = chinook.employee.employeeId;
+
+Complete the queries one by one and answer the questions:
+Will these queries return the same result? Answers: Yes or NO.
+If yes. Explain why.
+If not. Explain why.
+Which query will return more rows?
+
+select * from chinook.customer LEFT JOIN chinook.employee
+ON chinook.customer.SupportRepId = chinook.employee.employeeId
+where chinook.employee.FirstName is null;
+
+select * from chinook.customer LEFT JOIN chinook.employee
+ON chinook.customer.SupportRepId = chinook.employee.employeeId
+and chinook.employee.FirstName is null;
+
+Show the number and average cost of tracks in each genre. Display genre ID, genre name, quantity and average cost.
+
+Show the customer who spent the most money. To reduce the number of characters in the request, use aliases. To limit the number of records, use the "limit" operator. Display buyer ID, first name, last name and purchase price
+
+
+Extra (using a join of 3 tables)
+8. Show a list of album titles, album IDs, number of tracks and total album price for artist Audioslave.
