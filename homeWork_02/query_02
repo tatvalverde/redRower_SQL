@@ -10,3 +10,17 @@
 -- show product name for vendor 'Unimax Art Galleries'
 -- what is the customer number for the highest amount of payment
 -- Save your work
+USE classicmodels;
+-- select * from customers where country = 'Australia';
+-- select contactFirstName as FirstName, contactLastName as LastName,  city from customers where city = 'Melbourne';
+-- select contactFirstName as FirstName, contactLastName as LastName, creditLimit from customers where creditLimit > 200000;
+-- select * from employees where jobTitle = 'President';
+-- select count(*) from employeeswhere jobTitle = 'Sales Rep';
+-- select * from payments order by amount desc;
+-- select checkNumber from payments where paymentDate = "2004-12-17";
+-- select productLine from products where productDescription like '%realistic%'; ????
+-- select productName, productVendor from products where productVendor = 'Unimax Art Galleries';
+SELECT CustomerNumber
+FROM Payments
+ORDER BY Amount DESC
+LIMIT 1;
