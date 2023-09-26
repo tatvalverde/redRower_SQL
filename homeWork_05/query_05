@@ -1,0 +1,63 @@
+--               HW_5 for lecture 7
+
+If you are reading this file, then you have reached the end! I heartily congratulate you, future colleague!
+Then only practice, practice and more practice will help you become a true professional in your field!
+But before we send you on your way, let’s once again remember and practice what we learned during the course.
+
+To begin with, the prerequisites for doing homework are:
+
+Import the database called testdb.sql. You can find the database in our folder.
+Before writing a request, at the beginning of each task, create a comment and enter the task number in it. Don't forget about the semicolon at the end of each request :-)
+
+
+Here are the tasks themselves:
+
+Using a query, set our database as the default database.
+
+Using a query, see what tables the testdb database contains.
+
+Display the department table data.
+
+Situation:
+Our company is actively growing and now we have 2 departments in our structure: the support department and the planning and sales department. Add new departments to the table next in the list. Come up with a description of the departments yourself.
+
+Situation:
+The company's staff has changed. A request was received from the HR department to change the description of the analytics department and the name of the administration department. It is necessary to change the description to: system and business analysis, the name to: project office.
+
+Show a description of the testing department.
+
+Now imagine that you don’t see department IDs. Try finding the description of the testing department again. Use the like operator.
+
+Display the details of all employees.
+
+  At a meeting of managers and deputies of the IT company, they decided to optimize the number of departments in the company. They decided to abolish the “project office” department by distributing all department heads to the appropriate departments, while maintaining their positions. Make appropriate changes to the tables.
+Important: do not change department ids in the department table.
+
+
+Count the number of employees in the development department.
+
+The company hired 2 new employees in the support department as a support engineer. Full name: Matreshkin Oleg Gennadievich and Shirokova Maria Valerievna. Enrich the corresponding table with data.
+
+P.S. When adding data, do not specify or insert data into the ServiceId column.
+
+Employees Alexey Alekseev with the position of analyst and Isaev Ilya quit. Make changes to a table using one query.
+
+  Show the number of employees in each department. Use data from one employee table.
+
+The result should look like this:
+
+
+
+Show the full names of employees and the names of the departments in which they work. (Solve with JOIN).
+
+Show departments in which the number of employees is more than 2. (Solve using JOIN).
+
+Perform a left join on two tables. Perform a right join on two tables. Explain the difference between the 2 queries.
+
+Show departments, positions, and the number of employees in each department who have a supervisory position. (Solve with JOIN).
+
+We have good news in the testing department! Alena became the head of testing and promised to arrange a feast. Before you go celebrate, you need to make changes to the database. Do it)
+
+Run request No. 17 again and write down the total number of managers in the comments.
+
+  What happens if one of the concurrent users changes a table row without completing the transaction, and another one then tries to read the same row (Put your answer in the comments, explaining your answer).
